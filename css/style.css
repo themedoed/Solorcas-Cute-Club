@@ -197,10 +197,6 @@ button {
     width: 45px;
 }
 
-.solarcas-row {
-    display: flex;
-}
-
 .buy-box {
     margin: 0 auto 10px auto;
     text-align: center;
@@ -229,9 +225,11 @@ button {
     padding-left: 8px;
 }
 
+.solorcas-row {
+    display: flex;
+}
 
-
-.solarca-img {
+.solorca-img {
     height: 200px;
     width: 200px;
     margin: 5px;
@@ -239,7 +237,7 @@ button {
     transition: all .3s;
 }
 
-.solarca-img:hover {
+.solorca-img:hover {
     height: 206px;
     width: 206px;
     margin: 2px;
