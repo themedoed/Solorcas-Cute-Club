@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    /* color: black; */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    /* color: black; */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    transition: all 0.5s;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fst-scr {
+    /* background-color: black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../images/first-screen-bg.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.fst-scr__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.logo {
+    font-family: "Corinthia", cursive;
+    font-size: 45px;
+    margin-top: 41px;
+    transition: all .5s;
+}
+
+.logo:hover {
+    color: #057D9F;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.menu-item {
+    margin: 0 36px;
+}
+
+.menu-link {
+    transition: all .5s;
+}
+
+.menu-link:hover {
+    color: #057D9F;
+}
+
+.menu-item .mint {
+    font-size: 25px;
+    line-height: 27px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: all .5s;
+}
+
+.menu-item .mint:hover {
+    border-color: #057D9F;
+}
+
+
+.account-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    transition: all .5s;
+}
+
+.account-link:hover {
+    color: #057D9F;
+}
+
+.account-img {
+    height: 37px;
+    border-radius: 50%;
+}
+
+.account-text {
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.fst-scr__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fst-scr__info {
+    padding-top: 40px;
+    max-width: 700px;
+}
+
+.fst-scr__info-title {
+    font-family: "Corinthia", cursive;
+    font-size: 145px;
+    line-height: 115px;
+    max-width: 85%;
+    transition: all .5s;
+}
+
+.fst-scr__info-title:hover {
+    font-size: 150px;
+    color: #057D9F;
+}
+
+.fst-scr__info-text {
+    margin-top: 40px;
+}
+
+.fst-scr__info__links {
+    margin-top: 40px;
+    display: flex;
+}
+
+.mint-link {
+    color: #000;
+    font-size: 25px;
+    line-height: 27px;
+    margin-right: 50px;
+    background: linear-gradient(90deg, #057D9F 0.05%, #5BFFE4 100.15%, #60E7CE 100.16%);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.mint-link:hover {
+    background: linear-gradient(90deg, #60E7CE 100.16%, #057D9F 0.05%, #5BFFE4 100.15%);
+}
+
+.more-link {
+    font-size: 25px;
+    line-height: 27px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: all .5s;
+}
+
+.more-link:hover {
+    color: #057D9F;
+    border-color: #057D9F;
+}
+
+.social__links{
+    margin-top: 10px;
+}
+
+.social-img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    transition: all .2s;
+}
+
+.social-img:hover{
+    margin: 2.5px;
+    height: 45px;
+    width: 45px;
+}
+
+.solarcas-row {
+    display: flex;
+}
+
+.buy-box {
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+.buy-link {
+    color: #000;
+    display: flex;
+    transition: all .5s;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #057D9F 0.05%, #5BFFE4 100.15%, #60E7CE 100.16%);
+}
+
+.buy-link:hover{
+    background: linear-gradient(90deg, #60E7CE 100.16%, #057D9F 0.05%, #5BFFE4 100.15%);
+}
+
+.solana-img {
+    height: 35px;
+    width: 35px;
+}
+
+.buy-text {
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+
+
+.solarca-img {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.solarca-img:hover {
+    height: 206px;
+    width: 206px;
+    margin: 2px;
+    border: 2px solid #057D9F;
+    padding: 4px;
+}
