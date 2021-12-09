@@ -47,11 +47,12 @@ button {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    padding-bottom: 100px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     white-space: nowrap;
 }
 
@@ -66,7 +67,7 @@ button {
     color: #057D9F;
 }
 
-.menu-list {
+/* .menu-list {
     display: flex;
     justify-content: space-between;
     margin-top: 41px;
@@ -82,23 +83,26 @@ button {
 
 .menu-link:hover {
     color: #057D9F;
-}
+} */
 
-.menu-item .mint {
-    font-size: 25px;
+.buy-link {
     line-height: 27px;
+    display: flex;
     border: 2px solid #fff;
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: 10px 12px;
+    margin-top: 21px;
     transition: all .5s;
+    max-width: 213px;
 }
 
-.menu-item .mint:hover {
+.buy-link:hover {
+    color: #057D9F;
     border-color: #057D9F;
 }
 
 
-.account-link {
+/* .account-link {
     display: flex;
     justify-content: space-between;
     margin-top: 34px;
@@ -117,7 +121,7 @@ button {
 .account-text {
     padding-top: 8px;
     padding-left: 8px;
-}
+} */
 
 .fst-scr__content {
     display: flex;
@@ -154,7 +158,7 @@ button {
 .mint-link {
     color: #000;
     font-size: 25px;
-    line-height: 27px;
+    line-height: 32px;
     margin-right: 50px;
     background: linear-gradient(90deg, #057D9F 0.05%, #5BFFE4 100.15%, #60E7CE 100.16%);
     padding: 10px;
@@ -166,21 +170,14 @@ button {
     background: linear-gradient(90deg, #60E7CE 100.16%, #057D9F 0.05%, #5BFFE4 100.15%);
 }
 
-.more-link {
-    font-size: 25px;
-    line-height: 27px;
-    border: 2px solid #fff;
+.minted-text {
+    font-size: 30px;
+    line-height: 32px;
     border-radius: 10px;
-    padding: 10px 30px;
-    transition: all .5s;
+    padding: 10px;
 }
 
-.more-link:hover {
-    color: #057D9F;
-    border-color: #057D9F;
-}
-
-.social__links{
+.social__links {
     margin-top: 10px;
 }
 
@@ -191,28 +188,10 @@ button {
     transition: all .2s;
 }
 
-.social-img:hover{
+.social-img:hover {
     margin: 2.5px;
     height: 45px;
     width: 45px;
-}
-
-.buy-box {
-    margin: 0 auto 10px auto;
-    text-align: center;
-}
-
-.buy-link {
-    color: #000;
-    display: flex;
-    transition: all .5s;
-    padding: 10px 40px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #057D9F 0.05%, #5BFFE4 100.15%, #60E7CE 100.16%);
-}
-
-.buy-link:hover{
-    background: linear-gradient(90deg, #60E7CE 100.16%, #057D9F 0.05%, #5BFFE4 100.15%);
 }
 
 .solana-img {
@@ -238,9 +217,170 @@ button {
 }
 
 .solorca-img:hover {
-    height: 206px;
-    width: 206px;
-    margin: 2px;
-    border: 2.5px solid #057D9F;
+    border: 2px solid #057D9F;
     padding: 4px;
+}
+
+.solorcas__slider{
+    display: none;
+    width: 480px;
+}
+
+.solorca__slider-item{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+@media(max-width: 1335px){
+    body{
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .menu-item .mint{
+        font-size: 20px;
+    }
+    
+    .fst-scr__info-title{
+        font-size: 100px;
+        line-height: 80px;
+    }
+    
+    .fst-scr__info-title:hover{
+        font-size: 103px;
+    }
+    
+    .fst-scr__info-text{
+        margin-top: 20px;
+    }
+    
+    .mint-link{
+        margin-right: 40px;
+    }
+    
+    .minted-text{
+        font-size: 25px;
+    }
+
+    .solorca-img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(max-width: 1070px){
+    .fst-scr__content{
+        display: block;
+        text-align: center;
+    }
+    
+    .fst-scr__info{
+        max-width: none;
+    }
+    
+    .fst-scr__info-title{
+        max-width: none;
+    }
+    
+    .fst-scr__info__links{
+        justify-content: center;
+    }
+    
+    .solorcas__panel{
+        display: none;
+    }
+
+    .solorcas__slider{
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media(max-width: 760px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-list{
+        margin-top: 50px;
+        display: block;
+    }
+
+    .buy-link{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 191px;
+    }
+    
+    .menu-item{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 600px){
+    .fst-scr__info__links{
+        display: block;
+    }
+
+    .mint-link{
+        max-width: 244px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .minted-text{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 529px){
+    body{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .buy-link{
+        max-width: 213px;
+    }
+
+    .fst-scr__inner{
+        padding-bottom: 10px;
+    }
+
+    .fst-scr__info{
+        padding-top: 30px;
+    }
+
+    .fst-scr__info-title{
+        display: none;
+    }
+
+    .solorcas__slider{
+        width: 320px;
+    }
+}
+
+@media(max-width: 359px){
+    .logo{
+        white-space:normal;
+        line-height: 34px;
+    }
+
+    .solorcas__slider{
+        width: 160px;
+    }
+}
+
+@media(max-height: 850px){
+    .header{
+        margin-bottom: 10px;
+    }
+
+    .fst-scr__inner{
+        padding-bottom: 10px;
+    }
 }
